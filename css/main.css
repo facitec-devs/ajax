@@ -1,0 +1,16 @@
+.btn-default:after{
+	content: 'Me Gusta';
+}
+.btn-primary:after{
+	content: 'Ya no me gusta';	
+}
+.btn-primary:hover{
+	background-color: #c9302c;
+	border-color:#ac2925;
+}
+.btn-primary:hover:after{
+	content: 'No me gusta';
+	background-color: #c9302c;
+	border-color:#ac2925;
+}
+
