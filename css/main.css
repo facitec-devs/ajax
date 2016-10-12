@@ -11,6 +11,10 @@
 .loader img{
 	height: 120px;
 	width: 120px;
+	margin: 0px auto;
+}
+
+.loader {
 	text-align: center;
 	margin: 0px auto;
 }
