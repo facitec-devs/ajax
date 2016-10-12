@@ -1,16 +1,16 @@
-.btn-default:after{
-	content: 'Me Gusta';
+.img-avatar{
+	height: 120px;
+	width: 120px;
+	margin: 5px auto;
 }
-.btn-primary:after{
-	content: 'Ya no me gusta';	
+.panel{
+	box-shadow: 2px 2px 2px #aaa;
+	display: none;
+	text-align: center;
 }
-.btn-primary:hover{
-	background-color: #c9302c;
-	border-color:#ac2925;
+.loader img{
+	height: 120px;
+	width: 120px;
+	text-align: center;
+	margin: 0px auto;
 }
-.btn-primary:hover:after{
-	content: 'No me gusta';
-	background-color: #c9302c;
-	border-color:#ac2925;
-}
-
