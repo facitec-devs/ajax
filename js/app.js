@@ -25,8 +25,8 @@
 				
 				$.get(data.repos_url)
 					.done(function(repos) {
-						
-						$('table tbody').html();
+
+						$('table tbody').html('');
 						for (var i = repos.length - 1; i >= 0; i--) {
 
 								var row = '<tr><td>'+repos[i].id;
