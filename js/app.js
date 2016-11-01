@@ -18,8 +18,6 @@
 				$('.img-avatar').attr('src',data.avatar_url);
 				$('h3').html(data.name);
 				$('p').html(data.login);
-				$('.panel').show();
-				$('.loader').hide();
 			})
 			.done(function(data) {
 				
@@ -29,9 +27,9 @@
 						$('table tbody').html('');
 						for (var i = repos.length - 1; i >= 0; i--) {
 
-								var row = '<tr><td>'+repos[i].id;
-								row += '<td>'+repos[i].name;
-								row += '<td>'+repos[i].owner.login;
+								var row = '<tr><td>'+repos[i].name;
+								row += '<td>'+repos[i].description;
+								row += '<td>'+repos[i].language;
 
 
 								$('table tbody').append(row);
@@ -41,6 +39,7 @@
 			})
 			.fail(function() {
 				alert('Error de AJAX');
+				throw new Error("Error AJAX");
 			});
 	});
 			

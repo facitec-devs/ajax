@@ -3,6 +3,10 @@
 	width: 120px;
 	margin: 5px auto;
 }
+.inner_title{
+	text-align: left;
+	padding: 15px;
+}
 .panel{
 	box-shadow: 2px 2px 2px #aaa;
 	text-align: center;
@@ -16,4 +20,7 @@
 .loader {
 	text-align: center;
 	margin: 0px auto;
+}
+.panel table {
+	text-align: left;
 }
