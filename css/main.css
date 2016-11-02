@@ -1,3 +1,21 @@
+.componente{
+	box-shadow: 4px 4px 4px #aaa;
+	min-height: 50px;
+	padding: 5px;
+	margin: 5px;
+	text-align: left;
+}
+
+.componente-img{
+	max-height: 60px;
+	border-radius: 50%;
+}
+
+
+
+
+
+
 .img-avatar{
 	height: 120px;
 	width: 120px;
@@ -5,7 +23,9 @@
 }
 .inner_title{
 	text-align: left;
-	padding: 15px;
+	padding: 25px;
+	border-bottom: solid 1px #ccc;
+
 }
 .panel{
 	box-shadow: 2px 2px 2px #aaa;

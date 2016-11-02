@@ -37,10 +37,27 @@
 							}	
 					});
 			})
+			.done(function(data) {
+				$.get(data.followers_url)
+					.done(function(seguidores) {
+						console.log(seguidores);
+						$.get('template/user-componente.html')
+							.done(function(componente) {
+								$('.contenedor').html('');
+								 for(var i = 0; i < seguidores.length; i++){
+								 		var componenteLocal = $(componente);
+								 		componenteLocal.find('.componente-img').attr('src',seguidores[i].avatar_url);
+								 		componenteLocal.find('.componente-title').html(seguidores[i].login);
+								 		$('.contenedor').append(componenteLocal);
+								 }
+							});
+					})
+			})
 			.fail(function() {
 				alert('Error de AJAX');
 				throw new Error("Error AJAX");
 			});
 	});
+
 			
 })();
